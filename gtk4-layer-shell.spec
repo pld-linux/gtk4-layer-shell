@@ -8,7 +8,7 @@ Summary:	Library to create components for Wayland using the Layer Shell protocol
 Summary(pl.UTF-8):	Biblioteka do tworzenia komponentów Waylanda przy użyciu protokołu Layer Shell i GTK4
 Name:		gtk4-layer-shell
 Version:	1.3.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/wmww/gtk4-layer-shell/releases
@@ -155,6 +155,7 @@ rm -rf $RPM_BUILD_ROOT
 %files preload
 %defattr(644,root,root,755)
 %doc layer_shell_preload.md
+%dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/liblayer-shell-preload.so
 
 %files devel
